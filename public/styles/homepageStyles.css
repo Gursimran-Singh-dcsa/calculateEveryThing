@@ -1,0 +1,69 @@
+body {
+  text-align: center;
+}
+.header{
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+.logo{
+  display: inline block;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 300%;
+  color: blue;
+}
+.underlogo{
+  font-size: 12px;
+}
+.navItem{
+  font-weight: bolder;
+  display: inline-block;
+  text-align: center;
+  margin: 0px;
+}
+.navbar-custom{
+  background-color: black;
+}
+.navbarItemplate{
+  color:red;
+}
+.navbar-nav , .navbar{
+  padding: 0%;
+  background-color: black;
+}
+.listHeading{
+  background-color: black;
+  color: blue;
+  border-radius: none;
+}
+.downArrow{
+  font-size: 8px;
+  margin-bottom: 16px;
+}
+#navbarNav{
+  background-color: black;
+}
+.btnval{
+  width:30px;
+  margin-bottom: 5px;
+  background-color: #f1f3f4;
+  margin-left: 5px;
+}
+.button {
+  text-align: center;
+}
+.outerBoundry {
+  margin-top:10px;
+  border: 1px solid black;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 25px;
+}
+.screen {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}

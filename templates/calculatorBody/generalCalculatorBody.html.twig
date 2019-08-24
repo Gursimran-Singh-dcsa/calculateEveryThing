@@ -1,0 +1,15 @@
+<div class="outerBoundry">
+ <div class="screen">
+ </div>
+ <div class="button">
+  {% for btnTxt in range(low = 1, high = 9, step = 1) %}
+   <button class="{{ "btnval" ~ btnTxt }} btnval">{{ btnTxt }}</button>
+   {% if btnTxt in [3,6,9] %}
+    <br/>
+   {% endif %}
+  {% endfor %}
+  <button class="btnvaldot btnval">.</button>
+  <button class="btnvalzero btnval">0</button>
+  <button class="btnvalequal btnval">=</button>
+ </div>
+</div>
