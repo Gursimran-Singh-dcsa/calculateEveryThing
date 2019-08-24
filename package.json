@@ -1,0 +1,40 @@
+{
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.28.0",
+    "core-js": "^3.0.0",
+    "regenerator-runtime": "^0.13.2",
+    "webpack-notifier": "^1.8.0"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "watch": "./node_modules/.bin/encore dev --watch",
+    "build": "./node_modules/.bin/encore production --progress",
+    "dev-server": "./node_modules/.bin/encore dev-server",
+    "dev": "./node_modules/.bin/encore dev",
+    "webpack": "./node_modules/.bin/encore dev --watch",
+    "prod": "./node_modules/.bin/encore production"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.19.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "reactstrap": "^8.0.1"
+  },
+  "name": "calculateeverything",
+  "description": "This Project aims to create a Web Application in Symfony PHP that will tend to calculate most of the things that every person tries to find in his day to day life Like : converting CGPA to Percentage and vice versa, Currency convert, length and volume conversions etc.",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gursimran-Singh-dcsa/calculateEveryThing.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Gursimran-Singh-dcsa/calculateEveryThing/issues"
+  },
+  "homepage": "https://github.com/Gursimran-Singh-dcsa/calculateEveryThing#readme"
+}
