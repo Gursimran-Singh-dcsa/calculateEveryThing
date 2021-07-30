@@ -6,5 +6,8 @@ class templateController extends AbstractController{
     {
         return $this->render($template,$data);
     }
+    public function showJsonResponse($data) {
+        return $this->json($data);
+    }
 }
 ?>

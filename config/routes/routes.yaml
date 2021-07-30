@@ -1,3 +1,23 @@
 homepage:
   path: /
   controller: App\Controller\homepage\homepageController::homepage
+
+createIndex:
+  path: /createIndex
+  controller: App\Controller\ElasticSearch\ElasticSearch::create
+
+getIndexes:
+  path: /getIndexes
+  controller: App\Controller\ElasticSearch\ElasticSearch::getAll
+
+deleteIndexes:
+  path: /deleteIndex
+  controller: App\Controller\ElasticSearch\ElasticSearch::deleteIndex
+
+getDocuments:
+  path: /getDocuments
+  controller: App\Controller\ElasticSearch\ElasticSearch::getDocuments
+
+createDocument:
+  path: /createDocument
+  controller: App\Controller\ElasticSearch\ElasticSearch::createDocument

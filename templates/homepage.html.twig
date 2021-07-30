@@ -1,37 +1,40 @@
-{% extends "base.html.twig" %}
-{% block body %}
- <body class="" style="margin:0px">
-  {% block header %}
-   <div class="header container-fluid col-12" >
-    <span class="logo">{{"Calculate EveryThing"}}</span>
-    <sub class="underlogo">{{ "your free calculator" }}</sub>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>
+   {% block title %}
+    {{ title|default("welcome") }}
+   {% endblock %}
+  </title>
+  {% block stylesheets %}
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles/homepageStyles.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script src="js/createIndex.js"></script>
+  {% endblock %}
+ </head>
+ <body>
+  <div class="homepage">
+   <div class="createIndex">
+    <form id="createIndex">
+     <label>enter index name</label>
+     <input type="text" id="index_name" />
+     <button id="submitIndex" type="submit">create an Index!!</button>
+    </form>
    </div>
-   {% block navbar %}
-    {% set navItems = ["general", "physics", "chemistry", "math", "biology", "others"] %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <button class="navbar-toggler listHeading" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="listHeading">calculator menu <span class="downArrow">v</span></span>
-     </button>
-     <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav" >
-       {% for navitem in navItems %}
-        <li class="nav-item active navItem navbar-custom" >
-         <a class="nav-link navItem " id="navItem" style="color:blue" href="#">{{ navitem }}</a>
-        </li>
-       {% endfor %}
-      </ul>
-     </div>
-    </nav>
-   {% endblock navbar %}
-  {% endblock header %}
-
-  {% block bodyCenter %}
-   <div id="root"></div>
-   {# {% include "calculatorBody/generalCalculatorBody.html.twig" %} #}
-  {% endblock bodyCenter %}
-  {% block footer %}
-
-  {% endblock footer %} 
-
- </body>
-{% endblock %}
+   <div class="listIndexes" >
+    <div class="allIndex"> </div><br/>
+    <button id="getIndexes">Click here to list all indexes!!</button>
+   </div>
+  </div>
+  {% block javascripts %}
+   {# // 
+             // <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+             // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> #}
+   {# // <script src="build/app.js"></script> #}
+  {# {{ encore_entry_script_tags('app') }} #}
+ {% endblock %}
+</body></html>

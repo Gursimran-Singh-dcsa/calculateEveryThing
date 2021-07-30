@@ -29,6 +29,15 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "elasticsearch/elasticsearch": {
+        "version": "v7.13.1"
+    },
+    "ezimuel/guzzlestreams": {
+        "version": "3.0.1"
+    },
+    "ezimuel/ringphp": {
+        "version": "1.1.2"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -40,6 +49,9 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "react/promise": {
+        "version": "v2.8.0"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
